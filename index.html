@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scale Code SAS — IA que impulsa Latinoamérica</title>
+  <meta name="description" content="Scale Code SAS: empresa de tecnología e inteligencia artificial. Construimos productos, optimizamos procesos y llevamos IA confiable a tu negocio." />
+  <meta property="og:title" content="Scale Code SAS — IA que impulsa Latinoamérica" />
+  <meta property="og:description" content="Tecnología e IA de clase mundial desde Latinoamérica." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            base: {900: '#0b0b0f',800: '#121218'},
+            accent: {orange: '#FF6A00',teal: '#00C9A7',violet: '#6A00FF'}
+          },
+          boxShadow: {glow: '0 0 40px rgba(255,106,0,0.25)',glowTeal: '0 0 40px rgba(0,201,167,0.25)',glowViolet: '0 0 40px rgba(106,0,255,0.25)'},
+          backgroundImage: {
+            'grid': 'radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px)',
+            'hero': 'radial-gradient(1200px 600px at 80% -10%, rgba(255,106,0,0.18), transparent 60%), radial-gradient(900px 400px at 0% 0%, rgba(106,0,255,0.18), transparent 60%)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .glass{backdrop-filter:blur(10px);background:rgba(18,18,24,0.6)}
+    .btn{position:relative;overflow:hidden}
+    .btn::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.0),rgba(255,255,255,.2),rgba(255,255,255,.0));transform:translateX(-100%);transition:transform .6s}
+    .btn:hover::after{transform:translateX(100%)}
+    /* Multilenguaje */
+    .lang-en{display:none}
+    body[data-lang='en'] .lang-en{display:block}
+    body[data-lang='en'] .lang-es{display:none}
+  </style>
+</head>
+<body class="bg-base-900 text-white tracking-tight selection:bg-accent-orange/40 selection:text-white">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50">
+    <nav class="glass border-b border-white/5">
+      <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12a8 8 0 1 1 16 0" stroke="#FF6A00" stroke-width="2" stroke-linecap="round"/><path d="M12 4v16" stroke="#6A00FF" stroke-width="2" stroke-linecap="round"/><path d="M4 12h16" stroke="#00C9A7" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="text-lg font-semibold">Scale Code <span class="text-accent-orange">SAS</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-sm">
+          <a href="#servicios" class="hover:text-accent-orange"><span class="lang-es">Servicios</span><span class="lang-en">Services</span></a>
+          <a href="#soluciones" class="hover:text-accent-teal"><span class="lang-es">Soluciones IA</span><span class="lang-en">AI Solutions</span></a>
+          <a href="#casos" class="hover:text-accent-violet"><span class="lang-es">Casos</span><span class="lang-en">Case Studies</span></a>
+          <a href="#equipo" class="hover:text-accent-orange"><span class="lang-es">Equipo</span><span class="lang-en">Team</span></a>
+          <a href="#contacto" class="hover:text-accent-teal"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a>
+          <a href="#cotizar" class="ml-2 btn rounded-xl px-4 py-2 bg-accent-orange/90 hover:bg-accent-orange text-black font-medium shadow-glow"><span class="lang-es">Cotizar</span><span class="lang-en">Get a Quote</span></a>
+          <button id="langToggle" class="ml-4 btn rounded-xl px-3 py-2 border border-white/10 hover:border-accent-teal/60" aria-label="Language"><span class="lang-es">EN</span><span class="lang-en">ES</span></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-28 md:pt-36 bg-hero relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid bg-[length:22px_22px] opacity-[0.15]"></div>
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div class="reveal">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-[1.05]"><span class="lang-es">IA que <span class="text-accent-orange">escala</span> tu negocio en <span class="text-accent-violet">LatAm</span></span><span class="lang-en">AI that <span class="text-accent-orange">scales</span> your business across <span class="text-accent-violet">LatAm</span></span></h1>
+        <p class="mt-5 text-lg text-white/80 max-w-xl"><span class="lang-es">Construimos productos de software robustos y desarrollos de inteligencia artificial de vanguardia.</span><span class="lang-en">We build robust software products and cutting‑edge AI developments.</span></p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#contacto" class="btn rounded-xl px-5 py-3 bg-accent-orange text-black font-semibold shadow-glow"><span class="lang-es">Habla con nosotros</span><span class="lang-en">Talk to us</span></a>
+          <a href="#soluciones" class="btn rounded-xl px-5 py-3 border border-white/10 hover:border-accent-teal/60 hover:shadow-glowTeal"><span class="lang-es">Ver soluciones IA</span><span class="lang-en">See AI solutions</span></a>
+        </div>
+      </div>
+      <div class="reveal md:justify-self-end">
+        <div class="relative group">
+          <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-accent-violet via-accent-orange to-accent-teal opacity-60 blur-xl group-hover:opacity-80 transition"></div>
+          <div class="relative bg-base-800 rounded-3xl border border-white/10 p-6 md:p-8 shadow-2xl">
+            <div class="flex items-center justify-between">
+              <h3 class="text-xl font-semibold">Panel IA</h3>
+              <span class="text-xs px-2 py-1 rounded-full bg-white/10">Demo</span>
+            </div>
+            <div class="mt-6 grid grid-cols-3 gap-4">
+              <div class="p-4 rounded-2xl bg-white/5 border border-white/10"><p class="text-sm text-white/60">Predicción</p><p class="text-2xl font-bold text-accent-orange">+12%</p></div>
+              <div class="p-4 rounded-2xl bg-white/5 border border-white/10"><p class="text-sm text-white/60">Ahorro</p><p class="text-2xl font-bold text-accent-teal">-28%</p></div>
+              <div class="p-4 rounded-2xl bg-white/5 border border-white/10"><p class="text-sm text-white/60">SLA</p><p class="text-2xl font-bold text-accent-violet">99.9%</p></div>
+            </div>
+            <div class="mt-6 h-40 rounded-2xl bg-gradient-to-b from-white/5 to-transparent border border-white/10 flex items-center justify-center text-white/50 text-sm">Visualización de series de tiempo (placeholder)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logos -->
+  <section class="py-10 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <p class="text-center text-white/50 text-sm"><span class="lang-es">Tecnologías que dominamos</span><span class="lang-en">Technologies we master</span></p>
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-6 gap-6 opacity-80">
+        <div class="p-4 rounded-xl bg-white/5 text-center">AWS</div>
+        <div class="p-4 rounded-xl bg-white/5 text-center">GCP</div>
+        <div class="p-4 rounded-xl bg-white/5 text-center">Python</div>
+        <div class="p-4 rounded-xl bg-white/5 text-center">Node.js</div>
+        <div class="p-4 rounded-xl bg-white/5 text-center">Java</div>
+        <div class="p-4 rounded-xl bg-white/5 text-center">React / Next.js</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios 50/50 -->
+  <section id="servicios" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="reveal text-center">
+        <h2 class="text-3xl md:text-4xl font-bold"><span class="lang-es">Servicios orientados a Software & IA</span><span class="lang-en">Services focused on Software & AI</span></h2>
+        <p class="mt-3 text-white/70"><span class="lang-es">Nuestro portafolio equilibra desarrollo de software (50%) e inteligencia artificial (50%).</span><span class="lang-en">Our portfolio balances software development (50%) and artificial intelligence (50%).</span></p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-2 gap-8">
+        <div class="reveal p-6 rounded-2xl border border-white/10 bg-white/5">
+          <h3 class="text-2xl font-semibold"><span class="lang-es">Desarrollo de Software</span><span class="lang-en">Software Development</span></h3>
+          <ul class="mt-4 space-y-2 list-disc list-inside text-white/80">
+            <li><span class="lang-es">Aplicaciones web y móviles de alto rendimiento</span><span class="lang-en">High‑performance web & mobile apps</span></li>
+            <li><span class="lang-es">APIs y microservicios escalables</span><span class="lang-en">Scalable APIs & microservices</span></li>
+            <li><span class="lang-es">Integraciones y modernización de legados</span><span class="lang-en">Integrations & legacy modernization</span></li>
+            <li><span class="lang-es">Calidad: pruebas automáticas, seguridad y DevOps</span><span class="lang-en">Quality: automation, security & DevOps</span></li>
+          </ul>
+        </div>
+        <div class="reveal p-6 rounded-2xl border border-white/10 bg-white/5">
+          <h3 class="text-2xl font-semibold"><span class="lang-es">Soluciones de IA</span><span class="lang-en">AI Solutions</span></h3>
+          <ul class="mt-4 space-y-2 list-disc list-inside text-white/80">
+            <li><span class="lang-es">Copilotos y chatbots con datos propios (RAG)</span><span class="lang-en">Copilots & chatbots with your data (RAG)</span></li>
+            <li><span class="lang-es">Modelos predictivos, forecasting y pricing</span><span class="lang-en">Predictive models, forecasting & pricing</span></li>
+            <li><span class="lang-es">Visión computacional y NLP</span><span class="lang-en">Computer vision & NLP</span></li>
+            <li><span class="lang-es">Optimización de procesos con IA</span><span class="lang-en">Process optimization with AI</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Soluciones IA (cards) -->
+  <section id="soluciones" class="py-20 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="reveal text-center">
+        <h2 class="text-3xl md:text-4xl font-bold"><span class="lang-es">Soluciones de IA listas para implementar</span><span class="lang-en">AI solutions ready to deploy</span></h2>
+        <p class="mt-3 text-white/70"><span class="lang-es">Paquetes aceleradores con despliegue en semanas, no meses.</span><span class="lang-en">Accelerator packages delivered in weeks, not months.</span></p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="reveal rounded-2xl p-6 border border-white/10 bg-gradient-to-b from-white/5 to-transparent hover:shadow-glow transition">
+          <h3 class="text-xl font-semibold">Copiloto de atención</h3>
+          <p class="mt-2 text-white/70">RAG + workflows → CX y soporte multicanal.</p>
+        </div>
+        <div class="reveal rounded-2xl p-6 border border-white/10 bg-gradient-to-b from-white/5 to-transparent hover:shadow-glowTeal transition">
+          <h3 class="text-xl font-semibold">Detección de fraude</h3>
+          <p class="mt-2 text-white/70">Modelos explicables + reglas adaptativas.</p>
+        </div>
+        <div class="reveal rounded-2xl p-6 border border-white/10 bg-gradient-to-b from-white/5 to-transparent hover:shadow-glowViolet transition">
+          <h3 class="text-xl font-semibold">Forecast & Pricing</h3>
+          <p class="mt-2 text-white/70">Demanda y precios con series de tiempo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Casos -->
+  <section id="casos" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="reveal text-center">
+        <h2 class="text-3xl md:text-4xl font-bold"><span class="lang-es">Casos y resultados</span><span class="lang-en">Case studies & results</span></h2>
+        <p class="mt-3 text-white/70"><span class="lang-es">Impacto medible, entregas en producción.</span><span class="lang-en">Measurable impact, production deliveries.</span></p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <article class="reveal p-6 rounded-2xl border border-white/10 bg-white/5"><h3 class="font-semibold"><span class="lang-es">Retail — Copiloto de ventas</span><span class="lang-en">Retail — Sales Copilot</span></h3><p class="mt-2 text-white/70">+18% conversión, -22% AHT.</p></article>
+        <article class="reveal p-6 rounded-2xl border border-white/10 bg-white/5"><h3 class="font-semibold"><span class="lang-es">Finanzas — Detección de fraude</span><span class="lang-en">Finance — Fraud detection</span></h3><p class="mt-2 text-white/70">-35% falsos positivos.</p></article>
+        <article class="reveal p-6 rounded-2xl border border-white/10 bg-white/5"><h3 class="font-semibold"><span class="lang-es">Logística — Forecasting</span><span class="lang-en">Logistics — Forecasting</span></h3><p class="mt-2 text-white/70">-12% costos por optimización.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipo -->
+  <section id="equipo" class="py-20 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="reveal text-center">
+        <h2 class="text-3xl md:text-4xl font-bold"><span class="lang-es">Equipo</span><span class="lang-en">Team</span></h2>
+        <p class="mt-3 text-white/70"><span class="lang-es">Ingeniería senior con foco en valor de negocio.</span><span class="lang-en">Senior engineering focused on business value.</span></p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="reveal p-6 rounded-2xl border border-white/10 bg-white/5"><div class="h-32 rounded-xl bg-gradient-to-r from-accent-orange/50 to-accent-violet/50"></div><h3 class="mt-4 font-semibold">CTO</h3><p class="text-white/70 text-sm">Arquitectura, IA, seguridad y escalabilidad.</p></div>
+        <div class="reveal p-6 rounded-2xl border border-white/10 bg-white/5"><div class="h-32 rounded-xl bg-gradient-to-r from-accent-teal/50 to-accent-orange/50"></div><h3 class="mt-4 font-semibold">Data & MLOps</h3><p class="text-white/70 text-sm">Pipelines, monitoreo de modelos y gobernanza.</p></div>
+        <div class="reveal p-6 rounded-2xl border border-white/10 bg-white/5"><div class="h-32 rounded-xl bg-gradient-to-r from-accent-violet/50 to-accent-teal/50"></div><h3 class="mt-4 font-semibold">Product & UX</h3><p class="text-white/70 text-sm">Descubrimiento y diseño centrado en el usuario.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cotizar" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="reveal rounded-3xl border border-white/10 bg-gradient-to-r from-white/[.06] to-transparent p-10 text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold"><span class="lang-es">¿Listo para llevar IA a producción?</span><span class="lang-en">Ready to bring AI to production?</span></h2>
+        <p class="mt-3 text-white/70 max-w-2xl mx-auto"><span class="lang-es">Conversemos un diagnóstico en 30 minutos y una propuesta accionable en 72 horas.</span><span class="lang-en">Let's run a 30‑minute diagnosis and deliver an actionable proposal within 72 hours.</span></p>
+        <a href="#contacto" class="mt-6 inline-block btn rounded-xl px-6 py-3 bg-accent-orange text-black font-semibold shadow-glow"><span class="lang-es">Agendar diagnóstico</span><span class="lang-en">Book a diagnosis</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="reveal text-center"><h2 class="text-3xl md:text-4xl font-bold"><span class="lang-es">Preguntas frecuentes</span><span class="lang-en">Frequently asked questions</span></h2></div>
+      <div class="mt-10 space-y-4">
+        <details class="reveal group border border-white/10 rounded-xl p-5 bg-white/5"><summary class="cursor-pointer font-semibold group-open:text-accent-orange"><span class="lang-es">¿Cómo trabajamos los proyectos?</span><span class="lang-en">How do we run projects?</span></summary><p class="mt-3 text-white/70"><span class="lang-es">Descubrimiento, plan de valor, sprints quincenales, demos y métricas de impacto.</span><span class="lang-en">Discovery, value plan, bi‑weekly sprints, demos, and impact metrics.</span></p></details>
+        <details class="reveal group border border-white/10 rounded-xl p-5 bg-white/5"><summary class="cursor-pointer font-semibold group-open:text-accent-teal"><span class="lang-es">¿Qué niveles de servicio ofrecen?</span><span class="lang-en">What SLAs do you offer?</span></summary><p class="mt-3 text-white/70"><span class="lang-es">SLA 99.9% con monitoreo, alertas y on-call. Seguridad por diseño y cumplimiento.</span><span class="lang-en">99.9% SLA with monitoring, alerts, and on‑call. Security by design and compliance.</span></p></details>
+        <details class="reveal group border border-white/10 rounded-xl p-5 bg-white/5"><summary class="cursor-pointer font-semibold group-open:text-accent-violet"><span class="lang-es">¿Puedo empezar con un piloto?</span><span class="lang-en">Can I start with a pilot?</span></summary><p class="mt-3 text-white/70"><span class="lang-es">Sí. Pilotos de 4–6 semanas con objetivos y KPIs claros, y opción de escalamiento.</span><span class="lang-en">Yes. 4–6 week pilots with clear goals and KPIs, with a path to scale.</span></p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="reveal text-center"><h2 class="text-3xl md:text-4xl font-bold"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></h2><p class="mt-3 text-white/70"><span class="lang-es">Escríbenos y recibe respuesta en menos de 24h.</span><span class="lang-en">Write to us and get a reply within 24h.</span></p></div>
+      <form class="mt-10 grid md:grid-cols-2 gap-4" action="https://formspree.io/f/moqzjyqk" method="POST">
+        <input name="nombre" required data-ph-es="Nombre" data-ph-en="Name" placeholder="Nombre" class="rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-accent-orange" />
+        <input type="email" name="email" required data-ph-es="Email" data-ph-en="Email" placeholder="Email" class="rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-accent-orange" />
+        <input name="empresa" data-ph-es="Empresa" data-ph-en="Company" placeholder="Empresa" class="md:col-span-1 rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-accent-orange" />
+        <input name="telefono" data-ph-es="Teléfono" data-ph-en="Phone" placeholder="Teléfono" class="md:col-span-1 rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-accent-orange" />
+        <textarea name="mensaje" required data-ph-es="Cuéntanos tu reto" data-ph-en="Tell us about your challenge" placeholder="Cuéntanos tu reto" rows="5" class="md:col-span-2 rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-accent-orange"></textarea>
+        <button class="md:col-span-2 btn rounded-xl px-6 py-3 bg-accent-orange text-black font-semibold shadow-glow"><span class="lang-es">Enviar</span><span class="lang-en">Send</span></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-10">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+      <div class="text-center md:text-left">
+        <div class="flex items-center justify-center md:justify-start gap-2">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12a8 8 0 1 1 16 0" stroke="#FF6A00" stroke-width="2" stroke-linecap="round"/><path d="M12 4v16" stroke="#6A00FF" stroke-width="2" stroke-linecap="round"/><path d="M4 12h16" stroke="#00C9A7" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="font-semibold">Scale Code SAS</span>
+        </div>
+        <p class="mt-2 text-white/60 text-sm">© <span id="year"></span> <span class="lang-es">IA y software desde Colombia para LatAm.</span><span class="lang-en">AI and software from Colombia to LatAm.</span></p>
+      </div>
+      <div class="text-white/60 text-sm text-center md:text-right">
+        <a href="#privacidad" class="hover:text-white"><span class="lang-es">Política de privacidad</span><span class="lang-en">Privacy Policy</span></a>
+        <span class="mx-2">•</span>
+        <a href="#tcs" class="hover:text-white"><span class="lang-es">Términos y condiciones</span><span class="lang-en">Terms & Conditions</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Año
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Multilenguaje y placeholders + URL
+    (function(){
+      const key='sc-lang';const body=document.body;const btn=document.getElementById('langToggle');
+      const params=new URLSearchParams(location.search);let urlLang=params.get('lang');
+      if(!urlLang&&location.pathname.split('/').includes('en'))urlLang='en';
+      if(!urlLang&&location.pathname.split('/').includes('es'))urlLang='es';
+      const saved=localStorage.getItem(key);const navLang=navigator.language&&navigator.language.toLowerCase().startsWith('en')?'en':'es';
+      const initial=urlLang||saved||navLang;
+      function applyPlaceholders(lang){document.querySelectorAll('[data-ph-es]').forEach(el=>{const ph=el.getAttribute(lang==='en'?'data-ph-en':'data-ph-es');if(ph)el.placeholder=ph;});}
+      function applyLang(lang,updateUrl=true){body.setAttribute('data-lang',lang);localStorage.setItem(key,lang);applyPlaceholders(lang);if(updateUrl){const p=new URL(location.href);p.searchParams.set('lang',lang);history.replaceState({},'',p.toString());}}
+      applyLang(initial,true);
+      if(btn){btn.addEventListener('click',()=>{const next=body.getAttribute('data-lang')==='es'?'en':'es';applyLang(next,true);});}
+    })();
+
+    // Reveal on scroll (arregla que el contenido no aparezca)
+    (function(){
+      const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}})},{threshold:0.12});
+      document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+      // Asegurar que lo primero visible aparezca ya
+      document.querySelectorAll('.reveal').forEach((el,i)=>{if(i<3) el.classList.add('visible');});
+    })();
+  </script>
+</body>
+</html>

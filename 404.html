@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="refresh" content="0; url=/" />
+  <script>
+    // Redirige manteniendo el path y fuerza el idioma por /en o /es
+    (function () {
+      var path = location.pathname || "/";
+      var lang = path.split("/").includes("en") ? "en" : (path.split("/").includes("es") ? "es" : null);
+      var url = new URL("/", location.origin);
+      if (lang) url.searchParams.set("lang", lang);
+      // Conserva el fragmento (#seccion), útil para anchors como #contacto
+      url.hash = location.hash;
+      location.replace(url.toString());
+    })();
+  </script>
+  <title>Redirecting…</title>
+</head>
+<body></body>
+</html>
